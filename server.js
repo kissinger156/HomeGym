@@ -18,9 +18,12 @@ nunjucks.configure("views", {
 
 // TODO criar as rotas (POST)
 
+server.get("/", function (req, res) {
+    return res.render("index.html")
+})    
 
 {/* EXEMPLO ROTAS
-// rota "/"
+// rota "/"    
 server.get("/", function (req, res) {
     db.all(`SELECT * FROM ideas`, function(err, rows) {
         if(err) {
