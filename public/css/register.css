@@ -1,0 +1,132 @@
+
+#modalRegister {
+    background: #e67e22;
+
+    position: fixed;
+    top: 0;
+
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+
+    transition: 400ms;
+}
+
+#modalRegister.addScroll {
+    overflow: auto;
+}
+
+#modalRegister .content {
+    margin-top: 3%;
+
+    color: white;
+}
+
+#modalRegister .content h1 {
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+#modalRegister form {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 0 auto 15%;
+
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5) {
+    grid-column: span 2;
+}
+
+form input {
+    width: 100%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600px;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+#modalRegister a.goback {
+    width: 75px;
+    height: 20px;
+
+    background-color: #FFFFFF22;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    margin-top: 15px;
+    
+    margin-left: 239.44px;
+
+    transition: 400ms;
+}
+
+#modalRegister a.goback:hover {
+    background: #FFF;
+    color: #e67e22;
+
+    text-decoration: none;
+}
+
+#modalRegister button {
+    background: white;
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-top: 32px;
+    margin-left: 64.75px;
+
+    justify-self: end;
+
+    transition: 400ms;
+}
+
+form button:hover {
+    background-color: #0684E3;
+    color: white;
+
+    text-decoration: none;
+}
+
+
+#modalRegister.hide {
+    opacity: 0;
+    visibility: hidden;
+}
